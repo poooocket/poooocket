@@ -1,0 +1,73 @@
+
+body{
+ font-family: PingfangSC, sans-serif;
+	-webkit-font-smoothing：antialiased;
+	-moz-osx-font-smoothint:grayscale;
+	margin: 0;
+}
+
+h1{
+	font-weight: 300;
+	padding-bottom: 1em;
+}
+h2{
+	font-weight: 300;
+	padding-bottom: 0.5em;
+}
+
+p{
+	font-size: 1.2em;
+	font-weight: 300;
+	padding-bottom: 0.5em;
+}
+
+
+.con{
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+.intro{
+	position: relative;
+	overflow: hidden;
+	min-height: 400px;
+	height: 70vh;
+	background: url(file:///Users/echo/Desktop/portfolio/img/bg_licai.png) no-repeat center center;
+	background-size: cover;
+}
+
+.intro_content{
+	padding-top: 4em;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	height: 100%
+	-webkit-justify-content: center;
+	justify-content: center;
+	color: rgba(255,255,255,0.8);
+}
+
+.intro_title{
+	color: rgba(255,255,255,0.8);
+}
+
+.container{
+	padding: 3em;
+}
+
+.img_shadow{
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+.container2{
+	background-color: rgb(245,245,245);
+}
+
+.container4{
+	background-color: rgb(245,245,245);
+}
+
+.divider{
+	height: 1px;
+	background-color: rgb(225,225,225);
+}

@@ -1,0 +1,153 @@
+
+body{
+	background-image: linear-gradient(-135deg, rgb(255, 223, 182) 0px, rgba(255, 223, 182, 0) 800px), linear-gradient(-45deg, rgb(255, 223, 182) 0%, rgb(255, 193, 193) 46%, rgb(255, 208, 208) 70%, rgba(255, 186, 198, 0) 100%);
+}
+
+
+.jumbotron{
+	background-color: rgba(255,255,255,0);
+}
+
+.jumbotron h1{
+	font-weight: 300;
+	padding-top: 1em;
+	color: #e48080;
+}
+
+.jumbotron p{
+	color: white;
+}
+
+.container{
+	padding-bottom: 12em;
+}
+
+.col-sm-4{
+	margin-bottom: 4em;
+
+}
+
+.tilter {
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 415px;
+	margin: 1.5em 2.5em;
+	color: #fff;
+	flex: none;
+	perspective: 1000px;
+}
+
+.tilter * {
+	pointer-events: none;
+}
+
+.tilter:hover,
+.tilter:focus {
+	color: #fff;
+	outline: none;
+}
+
+/*
+.tilter__figure,
+.tilter__deco,
+.tilter__caption {
+	will-change: transform;
+}*/
+
+.tilter__figure,
+.tilter__image {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.tilter__figure > * {
+	transform: translateZ(0px); /* Force correct stacking order */
+}
+
+.smooth .tilter__figure,
+.smooth .tilter__deco--overlay,
+.smooth .tilter__deco--lines,
+.smooth .tilter__deco--shine div,
+.smooth .tilter__caption {
+	transition: transform 0.2s ease-out;
+}
+
+.tilter__figure {
+	position: relative;
+}
+
+.tilter__figure::before {
+	content: '';
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+	box-shadow: 0 30px 20px rgba(35,32,39,0.5);
+}
+
+.tilter__deco {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.tilter__deco--overlay {
+	background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
+}
+
+.tilter__deco--shine div {
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
+}
+
+.tilter__deco--lines {
+	fill: none;
+	stroke: rgba(255,255,255,0.5);
+	stroke-width: 1px;
+}
+
+.tilter__caption {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 3em;
+	padding-bottom: 5em;
+}
+
+.tilter__title {
+	margin: 0;
+	font-weight: normal;
+	font-size: 2.2em;
+	font-family: PingfangSC Light, sans-serif;
+	font-weight: lighter;
+	line-height: 1.2em;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.tilter__description {
+	margin: 1em 0 0 0;
+	font-family: PingfangSC Light, sans-serif;
+	font-size: 1.2em;
+	font-weight: lighter;
+	letter-spacing: 0.15em;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+	color: #EBC994;
+}
+
+/* Individual styles */
+
+/* Example 1 (Default) */
+.tilter--1 .tilter__figure::before {
+	box-shadow: 0 30px 20px rgba(0,0,0,0.5);
+}
